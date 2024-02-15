@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+
+        <label for="check" class="checkbtn">
+                <div class="click">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </label>
+
+        <label for="logo" class="logo">LICRESTOR</label>
+
+        <ul>
+            <li><a class="active" href="index.html">HOME</a></li>
+            <li><a href="order.html">ORDER</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="challenge.html">CHALLENGE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section class="header">
+        <div class="welcome">
+            <h1>WELCOME TO LIC RESTUARANT WEBSITE</h1>
+            <p>A Place To Be.</p>
+        </div>
+        <div class="popup" id="popup">
+            <div class="pop-content">
+                <div class="closepopup">
+                    <button type="reset" onclick="closePopup()" class="closepopup">X</button>
+                </div>
+                <h3>SUBSCRIBE</h3>
+                <div class="form">
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" name="" id="username" required>
+                            <label for="">Username</label>
+                            <i class="bi bi-share-fill"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="tel" name="" id="tel" required>
+                            <label for="">Email</label>
+                            <i class="bi bi-share-fill"></i>
+                        </div>
+                        
+                        <button class="btn-sub" type="submit">Subscribe</button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="for--counter">
+            <p>Our challenge next session that is the <span>EASTER CHALLENGE</span> will begin after the countdown reaches zero 
+                so subscribe to in order to get notified when the count-down is over   
+                </p>
+                <button class="btn-popup" onclick="openPopup()">Subscribe</button>
+            <div class="counter">
+                <div class="counter__1">
+                    Days
+                    <div class="all2" id="days">0</div>
+                </div>
+                <div class="counter__1">
+                    Hours
+                    <div class="all2" id="hours">0</div>
+                </div>
+                <div class="counter__1">
+                    Minutes
+                    <div class="all2" id="minutes">0</div>
+                </div>
+                <div class="counter__1">
+                    Seconds
+                    <div class="all2" id="seconds">0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <section class="meals">
+            <h1> OUR MOST POPULAR DISHES.</h1>
+            <p>LIC restaurant has a variety of meals which are very popular in Cameroon, Italy, Nigeria. That is, LIC restaurant has branches in these three countries. </p>
+            <div class="row">
+                <div class="meal-col">
+                    <h3>CAMEROONIAN MEALS</h3>
+                    <p>
+                        cameroonian cusine is a blend of traditional african dishes and french influences resolving to a unique and flavorful culinary experience. Some popular Cameroonian meals includes:
+                        Ndole, fufu, eru, mbongo choco, dibi, and even more
+                    </p>
+                </div>
+                <div class="meal-col">
+                    <h3>ITALIAN MEALS</h3>
+                    <p>
+                        Italian cusine is renowed for it's simplicity, freshness and regional diversity. Some popular Italian meals includes
+                        pizza, spaghetti, lasagna, risotto, osso buco, tiramisu and more
+                    </p>
+                </div>
+                <div class="meal-col">
+                    <h3>NIGERIAN MEALS</h3>
+                    <p>
+                        Nigerian cusine is a diverse blend of traditional dishes from differnt ethnic groups. Some popular Nigerian meals includes:
+                        Jellof rice, eba, suya, egusi soup, fufu pepper soup, banga soup, and more others
+                    </p>
+                </div>
+            </div>
+    
+            <div class="know">
+                <a href="order.html"><button class="btn">Know More</button></a>
+            </div>
+        </section>
+    </div>
+    <section class="animation1">
+
+        <div class="carousel-container">
+            <img class="carousel-image active" src="images/download (2).jpeg" alt="">
+            <img class="carousel-image" src="images/icons8-menu.gif" alt="">
+            <img class="carousel-image" src="images/images (1).jpeg" alt="">
+        </div>
+    </section>
+   <div class="container">
+    <section class="meals">
+        <h1>ROMANTIC CHALLENGE SESSION</h1>
+        <p>Are you ready for a delicious and speedy Challenge?<br>
+            Try ouur restuarant callenge! explore the best date spots in your city based on Cameroon, Italy, and Nigeria.
+            Also, indulge into mouth watering cusines while getting to know potential matches.
+        </p>
+        <h3>OUR ACTIVITIES</h2>
+        <p>Here are some of our challenges</p>
+        <div class="row">
+            <div class="meal-col">
+                <h3>The Buger Challenge</h3>
+                <p>Visit  one of our buger joints and subscribe for this particular event. It is mainly for viewing the things you have in common while enjoying the best Buger.</p>
+            </div>
+            <div class="meal-col">
+                <h3>The Gourmet Adventure</h3>
+                <p>A lovely and romantic adventure to discover the secret of the highest eater. this challenge is one of the most undertaken challenge</p>
+            </div>
+            <div class="meal-col">
+                <h3>The Italian Phrase Challenge</h3>
+                <p>This is a thought-wise challenge. The first person can order and then the other person will have to guess what it is!</p>
+            </div>
+        </div>
+        <div class="know_act">
+            <p>Goto the challenge section to know more about the challenges.</p>
+            <a href="challenge.html"><button class="btn">Challenge</button></a>
+        </div>
+    </section>
+   </div>
+
+   <div class="container">
+
+    <section class="meals">
+        <h1>SOME REVIEWS</h1>
+        <p>Here are some reviews of our clients</p>
+        <div class="carousel_container">
+            <div class="carousel-slide">
+                <div class="row">
+                    <div class="meal-col">
+                        <div class="rev">
+                            <div class="image"><img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVyc29ufGVufDB8fDB8fHww" alt="failed to load "></div>
+                            <div class="name">JANE STPHANIE</div>
+                            <div class="comment"><p>I'm a widow who puts much eforts in bringing up her three children. after a very stressful day i think the best option is to oder dishes from this website: Because, it is quick ans easy.</p></div>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p>Was this comment useful</p>
+                            <div class="like">
+                                <div class="like1"><i class="bi bi-hand-thumbs-up"></i></div>
+                                <div class="like1"><i class="bi bi-hand-thumbs-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-col">
+                        <div class="rev">
+                            <div class="image"><img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cGVyc29ufGVufDB8fDB8fHww" alt="failed to load "></div>
+                            <div class="name">DONALD RONALD</div>
+                            <div class="comment"><p>LICRESTOR is a pretty cool and romanticplace to be as it is said in th slugand. The day i visited with my wife they made it our first romantic outing </p></div>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p>Was this comment useful</p>
+                            <div class="like">
+                                <div class="like1"><i class="bi bi-hand-thumbs-up"></i></div>
+                                <div class="dislike"><i class="bi bi-hand-thumbs-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-col">
+                        <div class="rev">
+                            <div class="image"><img src="https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlcnNvbnxlbnwwfHwwfHx8MA%3D%3D" alt="failed to load "></div>
+                            <div class="name">JAMES MUSCLE</div>
+                            <div class="comment"><p>I'm always interested with the food quality of resturant but the day i visited LICRESTOR, it became a habit of eating there all the time.</p></div>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p>Was this comment useful</p>
+                            <div class="like">
+                                <div class="like1"><i class="bi bi-hand-thumbs-up"></i></div>
+                                <div class="dislike"><i class="bi bi-hand-thumbs-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="row">
+                    <div class="meal-col">
+                        <div class="rev">
+                            <div class="image"><img src="images/Snapchat-1728834740.jpg" alt="failed to load "></div>
+                            <div class="name">FABIOLA GILEN</div>
+                            <div class="comment"><p>I'm always interested with the food quality of resturant but the day i visited LICRESTOR, it became a habit of eating there all the time.</p></div>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p>Was this comment useful</p>
+                            <div class="like">
+                                <div class="like1"><i class="bi bi-hand-thumbs-up"></i></div>
+                                <div class="dislike"><i class="bi bi-hand-thumbs-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-col">
+                        <div class="rev">
+                            <div class="image"><img src="images/challenge3.jpeg" alt="failed to load "></div>
+                            <div class="name">MOHAMED OUSMAN</div>
+                            <div class="comment"><p>LICRESTOR is a pretty cool and romanticplace to be as it is said in th slugand. The day i visited with my wife they made it our first romantic outing </p></div>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p>Was this comment useful</p>
+                            <div class="like">
+                                <div class="like1"><i class="bi bi-hand-thumbs-up"></i></div>
+                                <div class="dislike"><i class="bi bi-hand-thumbs-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-col">
+                        <div class="rev">
+                            <div class="image"><img src="images/challenge3.jpeg" alt="failed to load "></div>
+                            <div class="name">JOHN JAKE</div>
+                            <div class="comment"><p>I'm a widow who puts much eforts in bringing up her three children. after a very stressful day i think the best option is to oder dishes from this website: Because, it is quick ans easy. </p></div>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p>Was this comment useful</p>
+                            <div class="like">
+                                <div class="like1"><i class="bi bi-hand-thumbs-up"></i></div>
+                                <div class="dislike"><i class="bi bi-hand-thumbs-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="row">
+                    <div class="meal-col">
+                        <div class="rev">
+                            <div class="image"><img src="images/challenge3.jpeg" alt="failed to load "></div>
+                            <div class="name">DOUGLASS ONE TOUCH</div>
+                            <div class="comment"><p>I'm always interested with the food quality of resturant but the day i visited LICRESTOR, it became a habit of eating there all the time.</p></div>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p>Was this comment useful</p>
+                            <div class="like">
+                                <div class="like1"><i class="bi bi-hand-thumbs-up"></i></div>
+                                <div class="dislike"><i class="bi bi-hand-thumbs-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-col">
+                        <div class="rev">
+                            <div class="image"><img src="images/challenge3.jpeg" alt="failed to load "></div>
+                            <div class="name">MICHEAL MIKE</div>
+                            <div class="comment"><p>LICRESTOR is a pretty cool and romanticplace to be as it is said in th slugand. The day i visited with my wife they made it our first romantic outing </p></div>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p>Was this comment useful</p>
+                            <div class="like">
+                                <div class="like1"><i class="bi bi-hand-thumbs-up"></i></div>
+                                <div class="dislike"><i class="bi bi-hand-thumbs-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="meal-col">
+                        <div class="rev">
+                            <div class="image"><img src="images/challenge3.jpeg" alt="failed to load "></div>
+                            <div class="name">JIM SCOTT</div>
+                            <div class="comment"><p>I'm a widow who puts much eforts in bringing up her three children. after a very stressful day i think the best option is to oder dishes from this website: Because, it is quick ans easy. </p></div>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                                <i class="bi bi-star"></i>
+                            </div>
+                            <p>Was this comment useful</p>
+                            <div class="like">
+                                <div class="like1"><i class="bi bi-hand-thumbs-up"></i></div>
+                                <div class="dislike"><i class="bi bi-hand-thumbs-down"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="carousel-nav">
+                <button onclick="plusSlides(-1)" class="bta">&#10094;</button>
+                <button onclick="plusSlides(1)" class="bta">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="branches">
+        <h1>OUR GLOBAL BRANCHES</h1>
+       <p>LIC restaurant has Main braches in three different countries that is in Cameroon, Italy and Nigeria.some images of our prestigious, classic, and morden buildings or restaurants.</p> 
+       <div class="row">
+        <div class="branch-col">
+            <img src="images/images (1).jpeg">
+            <div class="layer">
+                <h3>CAMEROON</h3>
+            </div>
+        </div>
+        <div class="branch-col">
+            <img src="images/download (2).jpeg">
+            <div class="layer">
+                <h3>ITALY</h3>
+            </div>
+        </div>
+        <div class="branch-col">
+            <img src="images/download (2).jpeg">
+            <div class="layer">
+                <h3>NIGERIA</h3>
+            </div>
+        </div>
+       </div>
+       <p>Click here to know more about LICRESTOR</p>
+       <a href="about.html"><button class="btn kna">Know more</button></a>
+    </section>
+
+   </div>
+   <section class="final"></section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>

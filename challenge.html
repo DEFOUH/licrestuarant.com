@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+
+        <label for="check" class="checkbtn">
+                <div class="click">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </label>
+
+        <label for="logo" class="logo">LICRESTOR</label>
+
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="order.html">ORDER</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a class="active" href="challenge.html">CHALLENGE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section class="header">
+        <div class="welcome">
+            <h1>WELCOME TO LIC RESTUARANT WEBSITE CHALLENGES</h1>
+        </div>
+        <div class="popup" id="popup">
+            <div class="pop-content">
+                <div class="closepopup">
+                    <button type="reset" onclick="closePopup()" class="closepopup">X</button>
+                </div>
+                <h3>SUBSCRIBE</h3>
+                <div class="form">
+                    <form action="#">
+                        <div class="input-box">
+                            <input type="text" name="" id="username" required>
+                            <label for="">Username</label>
+                            <i class="bi bi-share-fill"></i>
+                        </div>
+                        <div class="input-box">
+                            <input type="tel" name="" id="tel" required>
+                            <label for="">Email</label>
+                            <i class="bi bi-share-fill"></i>
+                        </div>
+                       
+                        <button class="btn-sub" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="for--counter">
+            <p>Our challenge next session that is the EASTER CHALLENGE will begin after the countdown reaches zero 
+                so subscribe to in order to get notified when the count-down is over   
+                </p>
+                <button class="btn-popup" onclick="openPopup()">Subscribe</button>
+            <div class="counter">
+                <div class="counter__1">
+                    Days
+                    <div class="all2" id="days">0</div>
+                </div>
+                <div class="counter__1">
+                    Hours
+                    <div class="all2" id="hours">0</div>
+                </div>
+                <div class="counter__1">
+                    Minutes
+                    <div class="all2" id="minutes">0</div>
+                </div>
+                <div class="counter__1">
+                    Seconds
+                    <div class="all2" id="seconds">0</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+function updateCounter() {
+    var now = new Date("Febrary 11, 2024 00:00:00");
+    var end = new Date(); // Set your end date here
+    var difference = now - end;
+
+    var days = Math.floor(difference / (1000* 60 * 60 * 24));
+    difference -= days * (1000 * 60 * 60 * 24);
+
+    var hours = Math.floor(difference / (1000 * 60 * 60));
+    difference -= hours * (1000 * 60 * 60);
+
+    var minutes = Math.floor(difference / (1000 * 60));
+    difference -= minutes * (1000 * 60);
+
+    var seconds = Math.floor(difference / 1000);
+
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("minutes").innerHTML = minutes;
+    document.getElementById("seconds").innerHTML = seconds;
+}
+
+setInterval(updateCounter, 1000);
+
+function openPopup() {
+    var notifyPanel = document.getElementById("popup");
+     notifyPanel.style.display = (notifyPanel.style.display === "block") ? "none" : "block";
+     notifyPanel.style.top = (notifyPanel.style.top === '50%')? '0' : '50%';
+     notifyPanel.style.transform = (notifyPanel.style.transform === 'translate(-50%, -50%)scale(1)')? "translate(-50%, -50%)scale(0.1)" : "translate(-50%, -50%)scale(1)"
+   }
+
+function closePopup() {
+    var notifyPanel = document.getElementById("popup");
+     notifyPanel.style.display = (notifyPanel.style.display === "block") ? "none" : "block";
+     notifyPanel.style.top = (notifyPanel.style.top === '50%')? '0' : '50%';
+     notifyPanel.style.transform = (notifyPanel.style.transform === 'translate(-50%, -50%)scale(1)')? "translate(-50%, -50%)scale(0.1)" : "translate(-50%, -50%)scale(1)"
+   }
+
+    </script>
+</body>
+</html>

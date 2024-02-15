@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>order//lic//dish.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+
+        <label for="check" class="checkbtn">
+                <div class="click">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+        </label>
+
+        <label for="logo" class="logo">LICRESTOR</label>
+
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="order.html">ORDER</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="challenge.html">CHALLENGE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <section class="pop-order" id="pop-order">
+        <div class="contain-order last-dispay" id="pop-order2">
+            <div class="image">
+                <img src="images/download (2).jpeg" alt="X">
+            </div>
+            <div class="text">
+                <h1>There you go!</h1>
+                <p>You meal will arrive as soon as possible. please bere with us if it arrive few minutes late, this might be due to poor transport facilities.
+                    but we'll make sure it arrives within an hour.
+                </p>
+                <p>please turn on your phone's location in-order to let us easily locate you.</p>
+            </div>
+            <div class="btp3">
+                <button onclick="closePop()" class="bto">OK</button>
+            </div>
+        </div>
+        <div class="contain-order" id="contain-order">
+            <div class="close">
+                <button onclick="closePop()">X</button>
+            </div>
+           <div class="pay">
+               <div class="cost">
+                   cost
+                   <input type="text" id="display">FCFA
+               </div>
+               <div class="payment" id="pay1">
+                   <h2>PAYMENT METHOD</h2>
+                   <form action="#">
+                       <input type="checkbox" name="Cash" onclick="openPop1()">
+                       <label for="Cash" id="cash">Cash</label><br>
+                       <input type="checkbox" name="bank" onclick="openPop2()">
+                       <label for="bank">Bank</label>
+                   </form>
+               </div>
+           </div>
+            <div class="after-cash">
+                <div class="location" id="locate1">
+                    <h2>LOCATION</h2>
+                    <form action="#">
+                        <label for="region">Region</label>
+                        <select name="region" id="region">
+                            <option value="">Centre</option>
+                            <option value="">Douala</option>
+                            <option value="">South-West</option>
+                        </select><br>
+
+                        <label for="quater">Quater</label>
+                        <select name="quater" id="quater">
+                            <option value="">Ekounou</option>
+                            <option value="">Ekie</option>
+                            <option value="">Hamadou</option>
+                            <option value="">Byem-assi</option>
+                            <option value="">Mvog-Atanganabala</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+                <div class="pay-all" id="pay2">
+                    <div class="payment">
+                        <h2>PAYMENT METHOD</h2>
+                        <form action="#">
+                            <input type="checkbox" name="momo" onclick="momoPay()">
+                            <label for="momo" id="momo1">MTN-MOMO</label><br>
+                            <input type="checkbox" name="money" onclick="orangePay()">
+                            <label for="money">ORANGE MONEY</label>
+                        </form>
+                    </div>
+                </div>
+                <div class="locate" id="locate2">
+                    <div class="cost momo" id="momo">
+                        Dial: *121*674467985* <input type="text">#
+                    </div>
+                    <div class="cost momo" id="orange">
+                        Dial: #151*674467985* <input type="text">#
+                    </div>
+                    <div class="location">
+                        <h2>LOCATION</h2>
+                        <form action="#">
+                            <label for="region">Region</label>
+                            <select name="region" id="region">
+                                <option value="">Centre</option>
+                                <option value="">Douala</option>
+                                <option value="">South-West</option>
+                            </select><br>
+    
+                            <label for="quater">Quater</label>
+                            <select name="quater" id="quater">
+                                <option value="">Ekounou</option>
+                                <option value="">Ekie</option>
+                                <option value="">Hamadou</option>
+                                <option value="">Byem-assi</option>
+                                <option value="">Mvog-Atanganabala</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="btp" id="btp">
+                    <button class="bto" onclick="myConclude()">Proceed</button>
+                </div>
+                <div class="btp1" id="btp1">
+                    <button class="bto" onclick="myConclude()">Proceed</button>
+                </div>
+            
+        </div>
+    </section>
+
+    <div class="hed-text">
+        <h1>WEEKLY MENU</h1>
+        <p>At LICRESTOR we offer a large  variety of meals weekly</p>
+    </div>
+
+
+    <div class="container">
+        <section class="meals">
+            <h1>ITALIAN MEALS</h1>
+            <p>Just for today our italian meals includes:</p>
+            <div class="row">
+                <div class="meal-col">
+                    <h3>PIZZA</h3>
+                   <div class="order">
+                    <form action="#">
+                        <p><form action="login.PHP" method="post">
+                            <label for="size">Choose your size:</label>
+                            <select id="size" name="size">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                            <br>
+                            <label for="toppings">Choose your toppings:</label><br>
+                            <input type="checkbox" id="toppings" name="toppings" value="pepperoni" class="toppings">
+                            <label for="pepperoni">Pepperoni</label><br>
+                            <input type="checkbox" id="toppings" name="toppings" value="mushrooms" class="toppings">
+                            <label for="mushrooms">Mushrooms</label><br>
+                            <input type="checkbox" id="toppings" name="toppings" value="onions" class="toppings">
+                            <label for="onions">Onions</label><br>
+                            
+                        </p>
+                    </form>
+                    <a href="#"><button type="submit"  class="bto" onclick="openPop()">Order</button></a>
+                   </div>
+                </div>
+                <div class="meal-col">
+                    <h3>SPAGETTI</h3>
+                    <div class="order">
+                        <form action="#">
+                            <p><form action="login.PHP" method="post">
+                                <label for="size">Choose your size:</label>
+                                <select id="size" name="size">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                                <br>
+                                <label for="toppings">Choose your toppings:</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="pepperoni" class="toppings">
+                                <label for="pepperoni">Pepperoni</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="mushrooms" class="toppings">
+                                <label for="mushrooms">Mushrooms</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="onions" class="toppings">
+                                <label for="onions">Onions</label><br>
+                                <br>
+                            </p>
+                        </form>
+                        <a href="#"><button type="submit"  class="bto" onclick="openPop()">Order</button></a>
+                       </div>
+                </div>
+                <div class="meal-col">
+                    <h3>RISOTTO</h3>
+                    <div class="order">
+                        <form action="#">
+                            <p><form action="#" method="post">
+                                <label for="size">Choose your size:</label>
+                                <select id="size" name="size">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                                <br>
+                                <label for="toppings">Choose your toppings:</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="pepperoni" class="toppings">
+                                <label for="pepperoni">Pepperoni</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="mushrooms" class="toppings">
+                                <label for="mushrooms">Mushrooms</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="onions" class="toppings">
+                                <label for="onions">Onions</label><br>
+                                <br>
+                                
+                            </p>
+                        </form>
+                        <a href="#"><button type="submit"  class="bto" onclick="openPop()">Order</button></a>
+                       </div>
+                </div>
+            </div>
+    
+            
+        </section>
+    </div>
+    <div class="container">
+        <section class="meals">
+            <h1>CAMEROON MEALS</h1>
+            <p>Just for this week our Cameroon meals will be from the South-West, North-west and Centre region:</p>
+            <div class="row">
+                <div class="meal-col">
+                    <h3>SOUTH-WEST</h3>
+                   <div class="order">
+                    <form action="#">
+                        <p><form action="login.PHP" method="post">
+                            <label for="size">Choose your meal:</label>
+                            <select id="size" name="size">
+                                <option value="small">Quankala</option>
+                                <option value="medium">Eru</option>
+                                <option value="large">Koki</option>
+                            </select>
+                            <br>
+                            <label for="toppings">Choose your compliments:</label><br>
+                            <input type="checkbox" id="toppings" name="toppings" value="pepperoni" class="toppings">
+                            <label for="pepperoni">Chicken</label><br>
+                            <input type="checkbox" id="toppings" name="toppings" value="mushrooms" class="toppings">
+                            <label for="mushrooms">Mpup</label><br>
+                            <input type="checkbox" id="toppings" name="toppings" value="onions" class="toppings">
+                            <label for="onions">Water Fufu</label><br>
+                            <br>
+                        </p>
+                    </form>
+                    <a href="#"><button type="submit"  class="bto" onclick="openPop()">Order</button></a>
+                   </div>
+                </div>
+                <div class="meal-col">
+                    <h3>NORTH-WEST</h3>
+                    <div class="order">
+                        <form action="#">
+                            <p><form action="login.PHP" method="post">
+                                <label for="size">Choose your meal:</label>
+                                <select id="size" name="size">
+                                    <option value="small">Huckuberry</option>
+                                    <option value="medium">cati-caty</option>
+                                    <option value="large">yellow soup</option>
+                                </select>
+                                <br>
+                                <label for="toppings">Choose your compliments:</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="pepperoni" class="toppings">
+                                <label for="pepperoni">Achu</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="mushrooms" class="toppings">
+                                <label for="mushrooms">Chicken</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="onions" class="toppings">
+                                <label for="onions">corn-fufu</label><br>
+                                <br>
+                            </p>
+                        </form>
+                        <a href="#"><button type="submit"  class="bto" onclick="openPop()">Order</button></a>
+                       </div>
+                </div>
+                <div class="meal-col">
+                    <h3>CENTRE</h3>
+                    <div class="order">
+                        <form action="#">
+                            <p><form action="login.PHP" method="post">
+                                <label for="size">Choose your meal:</label>
+                                <select id="size" name="size">
+                                    <option value="small">Okock</option>
+                                    <option value="medium">Mpuem</option>
+                                    <option value="large">Sanga</option>
+                                </select>
+                                <br>
+                                <label for="toppings">Choose your compliments:</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="pepperoni" class="toppings">
+                                <label for="pepperoni">bobolo</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="mushrooms" class="toppings">
+                                <label for="mushrooms">cassava</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="onions" class="toppings">
+                                <label for="onions">Coco-yam</label><br>
+                                <br>
+                            </p>
+                        </form>
+                        <a href="#"><button type="submit"  class="bto" onclick="openPop()">Order</button></a>
+                       </div>
+                </div>
+            </div>
+    
+            
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="meals">
+            <h1>NIGERIAN MEALS</h1>
+            <p>Just for today our Nigerian meals includes:</p>
+            <div class="row">
+                <div class="meal-col">
+                    <h3>PIZZA</h3>
+                   <div class="order">
+                    <form action="#">
+                        <p><form action="login.PHP" method="post">
+                            <label for="size">Choose your size:</label>
+                            <select id="size" name="size">
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                            <br>
+                            <label for="toppings">Choose your toppings:</label><br>
+                            <input type="checkbox" id="toppings" name="toppings" value="pepperoni" class="toppings">
+                            <label for="pepperoni">Pepperoni</label><br>
+                            <input type="checkbox" id="toppings" name="toppings" value="mushrooms" class="toppings">
+                            <label for="mushrooms">Mushrooms</label><br>
+                            <input type="checkbox" id="toppings" name="toppings" value="onions" class="toppings">
+                            <label for="onions">Onions</label><br>
+                            <br>
+                        </p>
+                    </form>
+                    <a href="#"><button type="submit"  class="bto" onclick="openPop()">Order</button></a>
+                   </div>
+                </div>
+                <div class="meal-col">
+                    <h3>SPAGETTI</h3>
+                    <div class="order">
+                        <form action="#">
+                            <p><form action="login.PHP" method="post">
+                                <label for="size">Choose your size:</label>
+                                <select id="size" name="size">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                                <br>
+                                <label for="toppings">Choose your toppings:</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="pepperoni" class="toppings">
+                                <label for="pepperoni">Pepperoni</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="mushrooms" class="toppings">
+                                <label for="mushrooms">Mushrooms</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="onions" class="toppings">
+                                <label for="onions">Onions</label><br>
+                                <br>
+                            </p>
+                        </form>
+                        <a href="#"><button type="submit"  class="bto" onclick="openPop()">Order</button></a>
+                       </div>
+                </div>
+                <div class="meal-col">
+                    <h3>RISOTTO</h3>
+                    <div class="order">
+                        <form action="#">
+                            <p><form action="login.PHP" method="post">
+                                <label for="size">Choose your size:</label>
+                                <select id="size" name="size">
+                                    <option value="small">Small</option>
+                                    <option value="medium">Medium</option>
+                                    <option value="large">Large</option>
+                                </select>
+                                <br>
+                                <label for="toppings">Choose your toppings:</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="pepperoni" class="toppings">
+                                <label for="pepperoni">Pepperoni</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="mushrooms" class="toppings">
+                                <label for="mushrooms">Mushrooms</label><br>
+                                <input type="checkbox" id="toppings" name="toppings" value="onions" class="toppings">
+                                <label for="onions">Onions</label><br>
+                                <br>
+                            </p>
+                        </form>
+                        <a href="#"><button type="submit"  class="bto" onclick="openPop()">Order</button></a>
+                       </div>
+                </div>
+            </div>
+    
+           
+        </section>
+    </div>
+
+    <script>
+
+        function openPop(){
+            var pop= document.getElementById("pop-order");
+            var pay1 = document.getElementById("pay1");
+            var pay2 = document.getElementById("pay2");
+            var pay11 = document.getElementById("locate1");
+            var pay12 = document.getElementById("btp");
+            var locate = document.getElementById("locate2");
+            var btn = document.getElementById("btp1");
+            pop.style.display = (pop.style.display === "block") ? "block" : "block";
+            pay1.style.display = (pay1.style.display === "block") ? "block" : "block";
+            pay2.style.display = (pay2.style.display === "none") ? "none" : "none";
+            pay11.style.display = (pay11.style.display === "none") ? "none" : "none";
+            pay12.style.display = (pay12.style.display === "none") ? "none" : "none";
+            locate.style.display = (locate.style.display === "none") ? "none" : "none";
+            btn.style.display = (btn.style.display === "none") ? "none" : "none";
+
+
+        }
+        function closePop(){
+            var pop= document.getElementById("pop-order");
+            pop.style.display = (pop.style.display === "none") ? "none" : "none";
+        }
+        //for cash payment//
+        function openPop1(){
+            var pay1 = document.getElementById("pay1");
+            var pay11 = document.getElementById("locate1");
+            var pay12 = document.getElementById("btp");
+            pay1.style.display = (pay1.style.display === "none") ? "none" : "none";
+            pay1.style.display = (pay1.style.display === "none") ? "none" : "none";
+            pay11.style.display = (pay11.style.display === "block") ? "block" : "block";
+            pay12.style.display = (pay12.style.display === "block") ? "block" : "block";
+
+        }
+        function myConclude(){
+            var last = document.getElementById("pop-order2");
+            var pay1 = document.getElementById("contain-order");
+            pay1.style.display = (pay1.style.display === "none") ? "none" : "none";
+            last.style.display = (last.style.display === "block") ? "block" : "block";
+        }
+        //for bank payment//
+
+        function openPop2(){
+            var pay1 = document.getElementById("pay1");
+            var pay2 = document.getElementById("pay2");
+            var pay12 = document.getElementById("btp");
+            pay1.style.display = (pay1.style.display === "none") ? "none" : "none";
+            pay2.style.display = (pay2.style.display === "block") ? "block" : "block";
+        }
+
+        //for momo//
+        function momoPay(){
+            var momo = document.getElementById("momo");
+            var orange = document.getElementById("orange");
+            var locate = document.getElementById("locate2");
+            var pay2 = document.getElementById("pay2");
+            var btn = document.getElementById("btp1");
+            momo.style.display = (momo.style.display === "block") ? "block" : "block";
+            locate.style.display = (locate.style.display === "block") ? "block" : "block";
+            btn.style.display = (btn.style.display === "block") ? "block" : "block";
+            pay2.style.display = (pay2.style.display === "none") ? "none" : "none";
+            orange.style.display = (orange.style.display === "none") ? "none" : "none";
+        }
+
+        //for orange momey//
+
+        function orangePay(){
+            var momo = document.getElementById("orange");
+            var orange = document.getElementById("momo");
+            var locate = document.getElementById("locate2");
+            var pay2 = document.getElementById("pay2");
+            var btn = document.getElementById("btp1");
+            momo.style.display = (momo.style.display === "block") ? "block" : "block";
+            locate.style.display = (locate.style.display === "block") ? "block" : "block";
+            btn.style.display = (btn.style.display === "block") ? "block" : "block";
+            orange.style.display = (orange.style.display === "none") ? "none" : "none";
+            pay2.style.display = (pay2.style.display === "none") ? "none" : "none";
+        }
+
+
+    </script>
+
+</body>
+</html>
